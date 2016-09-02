@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - imdb@localhost" uuid="3d011483-44ee-45b8-b171-ef9739bf230b">
+      <secret-storage>master_key</secret-storage>
+      <introspection-scope>imdb:public,pg_catalog,</introspection-scope>
+      <resolve-scope>imdb:public,</resolve-scope>
+    </data-source>
+  </component>
+</project>

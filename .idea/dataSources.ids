@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="PostgreSQL - imdb@localhost" uuid="3d011483-44ee-45b8-b171-ef9739bf230b">
+    <database-info product="PostgreSQL" version="9.5.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+      <database id="1" name="imdb">
+        <object-id>16554</object-id>
+        <visible>1</visible>
+      </database>
+      <database id="2" name="postgres">
+        <object-id>12641</object-id>
+      </database>
+      <database id="3" name="davehochstrasser">
+        <object-id>16385</object-id>
+      </database>
+      <database id="4" name="people">
+        <object-id>16386</object-id>
+      </database>
+      <database id="5" name="example">
+        <object-id>16524</object-id>
+      </database>
+      <schema id="6" parent="1" name="public">
+        <object-id>2200</object-id>
+        <visible>1</visible>
+        <introspection-state-number>1768</introspection-state-number>
+        <introspection-timestamp>2016-09-02.10:12:53.086</introspection-timestamp>
+      </schema>
+      <schema id="7" parent="1" name="pg_catalog">
+        <object-id>11</object-id>
+      </schema>
+      <schema id="8" parent="1" name="pg_toast">
+        <object-id>99</object-id>
+      </schema>
+      <schema id="9" parent="1" name="pg_temp_1">
+        <object-id>11816</object-id>
+      </schema>
+      <schema id="10" parent="1" name="pg_toast_temp_1">
+        <object-id>11817</object-id>
+      </schema>
+      <schema id="11" parent="1" name="information_schema">
+        <object-id>12349</object-id>
+      </schema>
+      <sequence id="12" parent="6" name="cast_castid_seq">
+        <object-id>16772</object-id>
+        <state-number>1232</state-number>
+      </sequence>
+      <sequence id="13" parent="6" name="genre_genreid_seq">
+        <object-id>16820</object-id>
+        <state-number>1317</state-number>
+      </sequence>
+      <sequence id="14" parent="6" name="genres_genreid_seq">
+        <object-id>16564</object-id>
+        <state-number>1087</state-number>
+      </sequence>
+      <sequence id="15" parent="6" name="movie_people_moviepeopleid_seq">
+        <object-id>16831</object-id>
+        <state-number>1365</state-number>
+      </sequence>
+      <sequence id="16" parent="6" name="moviegenre_moviegenreid_seq">
+        <object-id>16743</object-id>
+        <state-number>1200</state-number>
+      </sequence>
+      <sequence id="17" parent="6" name="movies_movieid_seq">
+        <object-id>16555</object-id>
+        <state-number>1085</state-number>
+      </sequence>
+      <sequence id="18" parent="6" name="nominee_nomineeid_seq">
+        <object-id>16673</object-id>
+        <state-number>1173</state-number>
+      </sequence>
+      <sequence id="19" parent="6" name="person_personid_seq">
+        <object-id>16573</object-id>
+        <state-number>1090</state-number>
+      </sequence>
+      <sequence id="20" parent="6" name="reviews_reviewid_seq">
+        <object-id>16619</object-id>
+        <state-number>1139</state-number>
+      </sequence>
+      <table id="21" parent="6" name="award">
+        <object-id>16594</object-id>
+        <state-number>1192</state-number>
+      </table>
+      <table id="22" parent="6" name="cast">
+        <object-id>16607</object-id>
+        <state-number>1231</state-number>
+      </table>
+      <table id="23" parent="6" name="genre">
+        <object-id>16566</object-id>
+        <state-number>1301</state-number>
+      </table>
+      <table id="24" parent="6" name="movie">
+        <object-id>16557</object-id>
+        <state-number>1720</state-number>
+      </table>
+      <table id="25" parent="6" name="movie_people">
+        <object-id>16833</object-id>
+        <state-number>1367</state-number>
+      </table>
+      <table id="26" parent="6" name="movie_prodcuction">
+        <object-id>16616</object-id>
+        <state-number>1181</state-number>
+      </table>
+      <table id="27" parent="6" name="moviegenre">
+        <object-id>16745</object-id>
+        <state-number>1282</state-number>
+      </table>
+      <table id="28" parent="6" name="moviereview">
+        <object-id>16850</object-id>
+        <state-number>1721</state-number>
+      </table>
+      <table id="29" parent="6" name="nominee">
+        <object-id>16610</object-id>
+        <state-number>1187</state-number>
+      </table>
+      <table id="30" parent="6" name="people">
+        <object-id>16575</object-id>
+        <state-number>1365</state-number>
+      </table>
+      <table id="31" parent="6" name="reviews">
+        <object-id>16621</object-id>
+        <state-number>1721</state-number>
+      </table>
+      <table id="32" parent="6" name="studio">
+        <object-id>16584</object-id>
+        <state-number>1169</state-number>
+      </table>
+      <column id="33" parent="21" name="awardid">
+        <state-number>1121</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="34" parent="21" name="title">
+        <state-number>1121</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <index id="35" parent="21" name="award_awardid_uindex">
+        <object-id>16599</object-id>
+        <columns>awardid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="36" parent="21" name="award_pkey">
+        <object-id>16597</object-id>
+        <columns>awardid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="37" parent="21" name="award_pkey">
+        <object-id>16598</object-id>
+        <columns>awardid</columns>
+        <underlying-index>award_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="38" parent="22" name="rolename">
+        <state-number>1231</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="39" parent="22" name="castid">
+        <state-number>1233</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;cast_castid_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="40" parent="22" name="peopleid">
+        <state-number>1193</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <index id="41" parent="22" name="cast_castid_pk">
+        <object-id>16645</object-id>
+        <columns>castid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="42" parent="22" name="cast_castid_uindex">
+        <object-id>16644</object-id>
+        <columns>castid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="43" parent="22" name="cast_castid_pk">
+        <object-id>16646</object-id>
+        <columns>castid</columns>
+        <underlying-index>cast_castid_pk</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="44" parent="22" name="cast_people_peopleid_fk">
+        <object-id>16728</object-id>
+        <columns>peopleid</columns>
+        <ref-key>~.people.person_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="45" parent="23" name="genreid">
+        <state-number>1318</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;genre_genreid_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="46" parent="23" name="type">
+        <state-number>1097</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <index id="47" parent="23" name="genre_genreid_uindex">
+        <object-id>16643</object-id>
+        <columns>genreid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="48" parent="23" name="genre_pkey">
+        <object-id>16641</object-id>
+        <columns>genreid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="49" parent="23" name="genres_genreid_uindex">
+        <object-id>16572</object-id>
+        <columns>genreid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="50" parent="23" name="genres_pkey">
+        <object-id>16570</object-id>
+        <columns>genreid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="51" parent="23" name="genre_pkey">
+        <object-id>16642</object-id>
+        <columns>genreid</columns>
+        <underlying-index>genre_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="52" parent="24" name="movieid">
+        <state-number>1085</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;movies_movieid_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="53" parent="24" name="moviereleasedate">
+        <state-number>1133</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="54" parent="24" name="country">
+        <state-number>1768</state-number>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="55" parent="24" name="runtime">
+        <state-number>1135</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="56" parent="24" name="language">
+        <state-number>1104</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="57" parent="24" name="rating">
+        <state-number>1105</state-number>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="58" parent="24" name="genreid">
+        <state-number>1311</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="59" parent="24" name="title">
+        <state-number>1107</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="60" parent="24" name="color">
+        <state-number>1130</state-number>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="61" parent="24" name="moviegenreid">
+        <state-number>1310</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <index id="62" parent="24" name="movies_movieid_uindex">
+        <object-id>16563</object-id>
+        <columns>movieid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="63" parent="24" name="movies_pkey">
+        <object-id>16561</object-id>
+        <columns>movieid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="64" parent="24" name="movie_title_uindex">
+        <object-id>16582</object-id>
+        <columns>title</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="65" parent="24" name="movie_tagline_uindex">
+        <object-id>16583</object-id>
+        <columns>counrty</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="66" parent="24" name="movies_pkey">
+        <object-id>16562</object-id>
+        <columns>movieid</columns>
+        <underlying-index>movies_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="67" parent="24" name="movie_genre_genreid_fk">
+        <object-id>16815</object-id>
+        <columns>?</columns>
+        <ref-key>~.genre.genre_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="68" parent="25" name="moviepeopleid">
+        <state-number>1365</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;movie_people_moviepeopleid_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="69" parent="25" name="movieid">
+        <state-number>1365</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="70" parent="25" name="peopleid">
+        <state-number>1365</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <index id="71" parent="25" name="Movie_people_moviepeopleid_uindex">
+        <object-id>16844</object-id>
+        <columns>moviepeopleid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="72" parent="25" name="movie_people_pkey">
+        <object-id>16837</object-id>
+        <columns>moviepeopleid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="73" parent="25" name="movie_people_pkey">
+        <object-id>16838</object-id>
+        <columns>moviepeopleid</columns>
+        <underlying-index>movie_people_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="74" parent="25" name="movie_people_movie_movieid_fk">
+        <object-id>16845</object-id>
+        <columns>movieid</columns>
+        <ref-key>~.movie.movies_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="75" parent="25" name="movie_people_people_peopleid_fk">
+        <object-id>16839</object-id>
+        <columns>peopleid</columns>
+        <ref-key>~.people.person_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="76" parent="26" name="studioid">
+        <state-number>1163</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="77" parent="26" name="movieid">
+        <state-number>1164</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="78" parent="26" name="movie_studioid">
+        <state-number>1165</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <index id="79" parent="26" name="movie_prodcuction_movie_studioid_pk">
+        <object-id>16661</object-id>
+        <columns>movie_studioid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="80" parent="26" name="movie_prodcuction_movie_studioid_uindex">
+        <object-id>16660</object-id>
+        <columns>movie_studioid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="81" parent="26" name="movie_prodcuction_movie_studioid_pk">
+        <object-id>16662</object-id>
+        <columns>movie_studioid</columns>
+        <underlying-index>movie_prodcuction_movie_studioid_pk</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="82" parent="26" name="movie_prodcuction_studio_studioid_fk">
+        <object-id>16668</object-id>
+        <columns>studioid</columns>
+        <ref-key>~.studio.studio_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="83" parent="26" name="movie_prodcuction_movie_movieid_fk">
+        <object-id>16698</object-id>
+        <columns>movieid</columns>
+        <ref-key>~.movie.movies_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="84" parent="27" name="moviegenreid">
+        <state-number>1200</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;moviegenre_moviegenreid_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="85" parent="27" name="movieid">
+        <state-number>1200</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="86" parent="27" name="genreid">
+        <state-number>1200</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <index id="87" parent="27" name="moviegenre_moviegenreid_uindex">
+        <object-id>16751</object-id>
+        <columns>moviegenreid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="88" parent="27" name="moviegenre_pkey">
+        <object-id>16749</object-id>
+        <columns>moviegenreid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="89" parent="27" name="moviegenre_pkey">
+        <object-id>16750</object-id>
+        <columns>moviegenreid</columns>
+        <underlying-index>moviegenre_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="90" parent="27" name="moviegenre_movie_movieid_fk">
+        <object-id>16752</object-id>
+        <columns>movieid</columns>
+        <ref-key>~.movie.movies_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="91" parent="27" name="moviegenre_genre_genreid_fk">
+        <object-id>16757</object-id>
+        <columns>genreid</columns>
+        <ref-key>~.genre.genre_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="92" parent="28" name="moviereviewid">
+        <state-number>1719</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="93" parent="28" name="movieid">
+        <state-number>1719</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="94" parent="28" name="reviewid">
+        <state-number>1719</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <index id="95" parent="28" name="moviereview_pkey">
+        <object-id>16853</object-id>
+        <columns>moviereviewid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="96" parent="28" name="moviereview_pkey">
+        <object-id>16854</object-id>
+        <columns>moviereviewid</columns>
+        <underlying-index>moviereview_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="97" parent="28" name="moviereview_movie_movieid_fk">
+        <object-id>16855</object-id>
+        <columns>movieid</columns>
+        <ref-key>~.movie.movies_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="98" parent="28" name="moviereview_reviews_reviewid_fk">
+        <object-id>16860</object-id>
+        <columns>reviewid</columns>
+        <ref-key>~.reviews.reviews_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="99" parent="29" name="awardid">
+        <state-number>1170</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="100" parent="29" name="peopleid">
+        <state-number>1171</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="101" parent="29" name="movieid">
+        <state-number>1172</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="102" parent="29" name="nomineeid">
+        <state-number>1173</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;nominee_nomineeid_seq&apos;::regclass)</default-expression>
+      </column>
+      <index id="103" parent="29" name="nominee_nomineeid_pk">
+        <object-id>16680</object-id>
+        <columns>nomineeid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="104" parent="29" name="nominee_nomineeid_uindex">
+        <object-id>16679</object-id>
+        <columns>nomineeid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="105" parent="29" name="nominee_nomineeid_pk">
+        <object-id>16681</object-id>
+        <columns>nomineeid</columns>
+        <underlying-index>nominee_nomineeid_pk</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="106" parent="29" name="nominee_award_awardid_fk">
+        <object-id>16703</object-id>
+        <columns>awardid</columns>
+        <ref-key>~.award.award_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="107" parent="29" name="nominee_people_peopleid_fk">
+        <object-id>16708</object-id>
+        <columns>peopleid</columns>
+        <ref-key>~.people.person_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="108" parent="29" name="nominee_movie_movieid_fk">
+        <object-id>16713</object-id>
+        <columns>movieid</columns>
+        <ref-key>~.movie.movies_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="109" parent="30" name="peopleid">
+        <state-number>1138</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;person_personid_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="110" parent="30" name="firstname">
+        <state-number>1093</state-number>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="111" parent="30" name="lastname">
+        <state-number>1094</state-number>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="112" parent="30" name="title">
+        <state-number>1095</state-number>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="113" parent="30" name="datemodified">
+        <state-number>1096</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="114" parent="30" name="gender">
+        <state-number>1114</state-number>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="115" parent="30" name="website">
+        <state-number>1115</state-number>
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="116" parent="30" name="email">
+        <state-number>1116</state-number>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="117" parent="30" name="dateofbirth">
+        <state-number>1117</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="118" parent="30" name="cityofbirth">
+        <state-number>1118</state-number>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="119" parent="30" name="counrtyofbirth">
+        <state-number>1119</state-number>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <index id="120" parent="30" name="person_personid_uindex">
+        <object-id>16581</object-id>
+        <columns>peopleid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="121" parent="30" name="person_pkey">
+        <object-id>16579</object-id>
+        <columns>peopleid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="122" parent="30" name="person_pkey">
+        <object-id>16580</object-id>
+        <columns>peopleid</columns>
+        <underlying-index>person_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="123" parent="31" name="reviewid">
+        <state-number>1139</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;reviews_reviewid_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="124" parent="31" name="movie_id">
+        <state-number>1708</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="125" parent="31" name="title">
+        <state-number>1707</state-number>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <index id="126" parent="31" name="reviews_pkey">
+        <object-id>16625</object-id>
+        <columns>reviewid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="127" parent="31" name="reviews_reviewid_uindex">
+        <object-id>16627</object-id>
+        <columns>reviewid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="128" parent="31" name="reviews_pkey">
+        <object-id>16626</object-id>
+        <columns>reviewid</columns>
+        <underlying-index>reviews_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="129" parent="31" name="reviews_movie_movieid_fk">
+        <object-id>16762</object-id>
+        <columns>movie_id</columns>
+        <ref-key>~.movie.movies_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="130" parent="32" name="studioid">
+        <state-number>1111</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="131" parent="32" name="studioname">
+        <state-number>1111</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="132" parent="32" name="country">
+        <state-number>1111</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="133" parent="32" name="enceptionyear">
+        <state-number>1111</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <index id="134" parent="32" name="studio_pkey">
+        <object-id>16587</object-id>
+        <columns>studioid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="135" parent="32" name="studio_studioid_uindex">
+        <object-id>16589</object-id>
+        <columns>studioid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="136" parent="32" name="studio_studioname_uindex">
+        <object-id>16590</object-id>
+        <columns>studioname</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="137" parent="32" name="studio_pkey">
+        <object-id>16588</object-id>
+        <columns>studioid</columns>
+        <underlying-index>studio_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
